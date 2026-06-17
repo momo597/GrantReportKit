@@ -1,0 +1,95 @@
+"use client";
+
+import { useState } from "react";
+
+const faqs = [
+  {
+    question: "Is this software?",
+    answer:
+      "Not yet. This is a manual beta setup service. We are validating the problem before building the full product.",
+  },
+  {
+    question: "What do I send you?",
+    answer:
+      "You send grant award letters, grant agreements, or funder emails that include reporting requirements or important dates.",
+  },
+  {
+    question: "What if my documents do not include report dates?",
+    answer:
+      "If we cannot find useful deadline information, we refund you. No questions asked.",
+  },
+  {
+    question: "Do you write grant reports?",
+    answer:
+      "No. We only extract and organize deadlines, report requirements, and reminder dates.",
+  },
+  {
+    question: "Is this legal or compliance advice?",
+    answer:
+      "No. GrantReportKit is an organization and reminder service. You should always confirm final requirements with your funder.",
+  },
+  {
+    question: "How do I receive the tracker?",
+    answer:
+      "We deliver a spreadsheet, reminder schedule, and board-friendly summary by email within 3 business days.",
+  },
+  {
+    question: "How many grants are included?",
+    answer: "The beta setup includes up to 5 grant award letters. Need more? Email us and we can discuss.",
+  },
+];
+
+function FAQItem({ question, answer }: { question: string; answer: string }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="border-b border-border last:border-b-0">
+      <button
+        type="button"
+        className="w-full flex items-center justify-between py-5 text-left cursor-pointer group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded-lg"
+        onClick={() => setOpen(!open)}
+        aria-expanded={open}
+      >
+        <span className="text-base font-medium text-foreground pr-4 group-hover:text-primary transition-colors duration-200">
+          {question}
+        </span>
+        <div className={`w-7 h-7 rounded-full border border-border flex items-center justify-center shrink-0 transition-all duration-200 ${open ? "bg-primary border-primary" : "group-hover:border-primary/40"}`}>
+          <svg
+            className={`w-3.5 h-3.5 transition-all duration-200 ${open ? "text-white rotate-180" : "text-muted"}`}
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+      </button>
+      <div
+        className={`overflow-hidden transition-all duration-200 ${open ? "max-h-40 pb-5" : "max-h-0"}`}
+      >
+        <p className="text-sm text-muted leading-relaxed pr-12">{answer}</p>
+      </div>
+    </div>
+  );
+}
+
+export default function FAQ() {
+  return (
+    <section id="faq" className="py-20 sm:py-28 bg-card">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="font-[family-name:var(--font-fraunces)] text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground">
+            Frequently asked questions
+          </h2>
+        </div>
+
+        <div className="bg-background border border-border rounded-2xl px-6 sm:px-8">
+          {faqs.map((faq) => (
+            <FAQItem key={faq.question} question={faq.question} answer={faq.answer} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
