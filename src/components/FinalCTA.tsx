@@ -1,5 +1,3 @@
-import { SUPPORT_EMAIL } from "@/lib/constants";
-
 export default function FinalCTA() {
   return (
     <section className="py-14 sm:py-20 lg:py-28 relative overflow-hidden">
@@ -47,12 +45,6 @@ export default function FinalCTA() {
           </div>
         </div>
 
-        <p className="mt-6 text-sm text-muted">
-          Questions?{" "}
-          <a href={`mailto:${SUPPORT_EMAIL}`} className="text-primary underline decoration-primary/30 hover:decoration-primary transition-colors duration-200">
-            {SUPPORT_EMAIL}
-          </a>
-        </p>
       </div>
     </section>
   );

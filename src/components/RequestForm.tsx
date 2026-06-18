@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { SUPPORT_EMAIL, WEB3FORMS_ACCESS_KEY } from "@/lib/constants";
+import { WEB3FORMS_ACCESS_KEY } from "@/lib/constants";
 
 const ROLE_OPTIONS = ["Executive Director", "Grant writer", "Development Director", "Operations/Admin", "Board member", "Volunteer grant coordinator", "Other"];
 const GRANT_COUNT_OPTIONS = ["1\u20132", "3\u20135", "6\u201310", "11\u201320", "20+"];
@@ -40,8 +40,7 @@ export default function RequestForm() {
               <svg className="w-7 h-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
             </div>
             <h2 className="font-[family-name:var(--font-fraunces)] text-2xl sm:text-3xl font-semibold text-foreground">Thanks &mdash; your setup request was received.</h2>
-            <p className="mt-4 text-base text-muted leading-relaxed max-w-md mx-auto">We&apos;ll review your answers and email you next steps. If your grants are a good fit for the beta setup, we&apos;ll send the $49 payment link and instructions for sharing your award letters.</p>
-            <p className="mt-6 text-sm text-muted">Questions in the meantime?{" "}<a href={`mailto:${SUPPORT_EMAIL}`} className="text-primary underline decoration-primary/30 hover:decoration-primary transition-colors duration-200">{SUPPORT_EMAIL}</a></p>
+            <p className="mt-4 text-base text-muted leading-relaxed max-w-md mx-auto">We&apos;ll review your answers and email you next steps. If your grants are a good fit for the beta setup, we&apos;ll send payment instructions and a secure way to share your award letters.</p>
           </div>
         </div>
       </section>
@@ -133,7 +132,7 @@ export default function RequestForm() {
 
           {status === "error" && (
             <div className="p-4 rounded-xl bg-red-50 border border-red-200" role="alert">
-              <p className="text-sm text-red-800">Something went wrong. Please email{" "}<a href={`mailto:${SUPPORT_EMAIL}?subject=GrantReportKit setup request`} className="underline font-medium">{SUPPORT_EMAIL}</a>{" "}with the subject &ldquo;GrantReportKit setup request.&rdquo;</p>
+              <p className="text-sm text-red-800">Something went wrong. Please try again in a moment, or submit your request later.</p>
             </div>
           )}
 

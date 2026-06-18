@@ -1,5 +1,3 @@
-import { SUPPORT_EMAIL } from "@/lib/constants";
-
 export default function Footer() {
   return (
     <footer className="py-10 border-t border-border">
@@ -20,7 +18,6 @@ export default function Footer() {
               <a href="#" className="text-xs text-muted hover:text-foreground transition-colors duration-200">Privacy Policy</a>
               <a href="#" className="text-xs text-muted hover:text-foreground transition-colors duration-200">Terms of Service</a>
               <a href="#" className="text-xs text-muted hover:text-foreground transition-colors duration-200">Refund Policy</a>
-              <a href={`mailto:${SUPPORT_EMAIL}`} className="text-xs text-muted hover:text-foreground transition-colors duration-200">{SUPPORT_EMAIL}</a>
             </nav>
           </div>
 

@@ -1,5 +1,3 @@
-import { SUPPORT_EMAIL } from "@/lib/constants";
-
 export default function Hero() {
   return (
     <section className="relative py-12 sm:py-20 lg:py-32 overflow-hidden">
@@ -24,9 +22,9 @@ export default function Hero() {
             </h1>
 
             <p className="mt-4 sm:mt-6 text-base sm:text-lg text-muted leading-relaxed max-w-xl">
-              Send us your award letters. We turn them into a clean grant
-              deadline tracker with report dates, renewal dates, required
-              documents, and reminders.
+              Tell us about your grants first. If it&apos;s a good fit, we&apos;ll
+              send next steps for sharing your award letters and setting up your
+              grant deadline tracker.
             </p>
 
             <div className="mt-6 sm:mt-8">
@@ -42,7 +40,7 @@ export default function Hero() {
             </div>
 
             <p className="mt-3 sm:mt-4 text-sm text-muted">
-              We&apos;ll review your needs first. You only pay if your documents are a good fit.
+              No payment required to request a setup spot. We&apos;ll review your needs first.
             </p>
 
             <div className="mt-3 flex items-start gap-2">
@@ -54,12 +52,6 @@ export default function Hero() {
               </p>
             </div>
 
-            <p className="mt-3 sm:mt-4 text-sm text-muted">
-              Questions?{" "}
-              <a href={`mailto:${SUPPORT_EMAIL}`} className="text-primary underline decoration-primary/30 hover:decoration-primary transition-colors duration-200">
-                {SUPPORT_EMAIL}
-              </a>
-            </p>
           </div>
 
           {/* Right: Visual mockup — stacked on mobile, overlapping on desktop */}

@@ -11,7 +11,7 @@ const faqs = [
   {
     question: "What do I send you?",
     answer:
-      "You send grant award letters, grant agreements, or funder emails that include reporting requirements or important dates.",
+      "Start by filling out the setup request form. After we review your request, we\u2019ll send instructions for sharing your award letters or grant agreements.",
   },
   {
     question: "What if my documents do not include report dates?",
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: "How many grants are included?",
-    answer: "The beta setup includes up to 5 grant award letters. Need more? Email us and we can discuss.",
+    answer: "The beta setup includes up to 5 grant award letters. Need more? Mention it in the setup request form and we can discuss.",
   },
 ];
 
@@ -55,7 +55,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
         </span>
         <div className={`w-7 h-7 rounded-full border border-border flex items-center justify-center shrink-0 transition-all duration-200 ${open ? "bg-primary border-primary" : "group-hover:border-primary/40"}`}>
           <svg
-            className={`w-3.5 h-3.5 transition-all duration-200 ${open ? "text-white rotate-180" : "text-muted"}`}
+            className={`w-3.5 h-3.5 transition-transform duration-200 ${open ? "text-white rotate-180" : "text-muted"}`}
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -65,11 +65,11 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
           </svg>
         </div>
       </button>
-      <div
-        className={`overflow-hidden transition-all duration-200 ${open ? "max-h-40 pb-5" : "max-h-0"}`}
-      >
-        <p className="text-sm text-muted leading-relaxed pr-8 sm:pr-12">{answer}</p>
-      </div>
+      {open && (
+        <div className="pb-5">
+          <p className="text-sm text-muted leading-relaxed pr-8 sm:pr-12">{answer}</p>
+        </div>
+      )}
     </div>
   );
 }

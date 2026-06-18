@@ -1,5 +1,3 @@
-import { SUPPORT_EMAIL } from "@/lib/constants";
-
 export default function Pricing() {
   const includes = [
     "Up to 5 award letters",
@@ -89,12 +87,6 @@ export default function Pricing() {
               </p>
             </div>
 
-            <p className="mt-5 text-center text-xs text-muted">
-              Questions?{" "}
-              <a href={`mailto:${SUPPORT_EMAIL}`} className="text-primary underline decoration-primary/30 hover:decoration-primary transition-colors duration-200">
-                {SUPPORT_EMAIL}
-              </a>
-            </p>
           </div>
         </div>
       </div>

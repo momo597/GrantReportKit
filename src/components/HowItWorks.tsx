@@ -2,8 +2,8 @@ export default function HowItWorks() {
   const steps = [
     {
       step: "01",
-      title: "Send your award letters",
-      description: "Upload or email up to 5 grant award letters, grant agreements, or funder emails with reporting requirements.",
+      title: "Request a setup spot",
+      description: "Fill out the form below. We\u2019ll review your needs and confirm if your grants are a good fit for the beta.",
       icon: (
         <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
@@ -12,8 +12,8 @@ export default function HowItWorks() {
     },
     {
       step: "02",
-      title: "We find the important dates",
-      description: "We read each document and extract report deadlines, renewal dates, grant periods, and required report items.",
+      title: "Share your award letters",
+      description: "After we confirm the fit, we\u2019ll send instructions for sharing up to 5 grant award letters or agreements securely.",
       icon: (
         <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
@@ -22,8 +22,8 @@ export default function HowItWorks() {
     },
     {
       step: "03",
-      title: "You get a clean tracker",
-      description: "Receive a deadline tracker spreadsheet, a reminder schedule, a board-friendly summary, and an optional Google Calendar file.",
+      title: "Get your clean tracker",
+      description: "We extract report deadlines, renewal dates, and required items, then deliver a deadline tracker, reminder schedule, and board-friendly summary.",
       icon: (
         <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
