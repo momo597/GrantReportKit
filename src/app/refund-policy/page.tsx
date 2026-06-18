@@ -60,10 +60,13 @@ export default function RefundPolicyPage() {
       <section>
         <h2 className="text-lg font-semibold text-foreground">How to request a refund</h2>
         <p>
-          A business contact email will be provided here once active. In the
-          meantime, if you need to request a refund, please use the setup
-          request form on the homepage to get in touch and mention your refund
-          request in the message field.
+          To request a refund, email{" "}
+          <a href="mailto:setup@grantreportkit.com" className="text-primary underline decoration-primary/30 hover:decoration-primary transition-colors duration-200">
+            setup@grantreportkit.com
+          </a>{" "}
+          and include the organization name, the email used for payment, and a
+          short description of the issue. Approved refunds will be processed
+          through the original payment method where possible.
         </p>
       </section>
     </LegalLayout>

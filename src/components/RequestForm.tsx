@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { WEB3FORMS_ACCESS_KEY } from "@/lib/constants";
+import { WEB3FORMS_ACCESS_KEY, CONTACT_EMAIL } from "@/lib/constants";
 
 const ROLE_OPTIONS = ["Executive Director", "Grant writer", "Development Director", "Operations/Admin", "Board member", "Volunteer grant coordinator", "Other"];
 const GRANT_COUNT_OPTIONS = ["1\u20132", "3\u20135", "6\u201310", "11\u201320", "20+"];
@@ -41,6 +41,7 @@ export default function RequestForm() {
             </div>
             <h2 className="font-[family-name:var(--font-fraunces)] text-2xl sm:text-3xl font-semibold text-foreground">Thanks &mdash; your setup request was received.</h2>
             <p className="mt-4 text-base text-muted leading-relaxed max-w-md mx-auto">We&apos;ll review your answers and email you next steps. If your grants are a good fit for the beta setup, we&apos;ll send payment instructions and a secure way to share your award letters.</p>
+            <p className="mt-4 text-sm text-muted">If you have questions, you can contact us at{" "}<a href={`mailto:${CONTACT_EMAIL}`} className="text-primary underline decoration-primary/30 hover:decoration-primary transition-colors duration-200">{CONTACT_EMAIL}</a></p>
           </div>
         </div>
       </section>
@@ -132,7 +133,7 @@ export default function RequestForm() {
 
           {status === "error" && (
             <div className="p-4 rounded-xl bg-red-50 border border-red-200" role="alert">
-              <p className="text-sm text-red-800">Something went wrong. Please try again in a moment, or submit your request later.</p>
+              <p className="text-sm text-red-800">Something went wrong. Please try again in a moment, or email{" "}<a href={`mailto:${CONTACT_EMAIL}?subject=GrantReportKit setup request`} className="underline font-medium">{CONTACT_EMAIL}</a>{" "}with the subject &ldquo;GrantReportKit setup request.&rdquo;</p>
             </div>
           )}
 

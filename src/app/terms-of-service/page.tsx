@@ -137,8 +137,11 @@ export default function TermsOfServicePage() {
       <section>
         <h2 className="text-lg font-semibold text-foreground">Contact</h2>
         <p>
-          A business contact email will be added once active. In the meantime,
-          you can reach us through the setup request form on the homepage.
+          Questions about these Terms can be sent to{" "}
+          <a href="mailto:setup@grantreportkit.com" className="text-primary underline decoration-primary/30 hover:decoration-primary transition-colors duration-200">
+            setup@grantreportkit.com
+          </a>. You can also reach us through the setup request form on the
+          homepage.
         </p>
       </section>
     </LegalLayout>

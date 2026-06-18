@@ -26,6 +26,7 @@ export default function Header() {
             <a href="/#what-you-get" className="text-sm text-muted hover:text-foreground transition-colors duration-200">What you get</a>
             <a href="/#pricing" className="text-sm text-muted hover:text-foreground transition-colors duration-200">Pricing</a>
             <a href="/#faq" className="text-sm text-muted hover:text-foreground transition-colors duration-200">FAQ</a>
+            <a href="/contact" className="text-sm text-muted hover:text-foreground transition-colors duration-200">Contact</a>
           </nav>
 
           <div className="flex items-center gap-2">
@@ -71,6 +72,7 @@ export default function Header() {
               <a href="/#what-you-get" className="text-sm text-muted hover:text-foreground transition-colors duration-200 py-1" onClick={() => setMobileOpen(false)}>What you get</a>
               <a href="/#pricing" className="text-sm text-muted hover:text-foreground transition-colors duration-200 py-1" onClick={() => setMobileOpen(false)}>Pricing</a>
               <a href="/#faq" className="text-sm text-muted hover:text-foreground transition-colors duration-200 py-1" onClick={() => setMobileOpen(false)}>FAQ</a>
+              <a href="/contact" className="text-sm text-muted hover:text-foreground transition-colors duration-200 py-1" onClick={() => setMobileOpen(false)}>Contact</a>
               <a href="/#request-setup" className="inline-flex items-center justify-center px-4 py-3 text-sm font-medium text-white bg-primary rounded-full hover:bg-primary-dark transition-colors duration-200 cursor-pointer mt-2 min-h-[44px]" onClick={() => setMobileOpen(false)}>
                 Request my $49 beta setup
               </a>

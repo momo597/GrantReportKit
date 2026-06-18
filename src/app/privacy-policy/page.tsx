@@ -95,17 +95,18 @@ export default function PrivacyPolicyPage() {
         <p>
           You may request access to, correction of, or deletion of the personal
           information you submitted, subject to legal, security, or operational
-          limits. A business contact email will be added once active. Until then,
-          you can contact us through the setup request form on the homepage.
+          limits. You can contact us at setup@grantreportkit.com or through the
+          setup request form on the homepage.
         </p>
       </section>
 
       <section>
         <h2 className="text-lg font-semibold text-foreground">Privacy contact</h2>
         <p>
-          Founder / person responsible for personal information. A business
-          contact email will be added once active. In the meantime, you can
-          reach us through the setup request form on the homepage.
+          Founder / person responsible for personal information —{" "}
+          <a href="mailto:setup@grantreportkit.com" className="text-primary underline decoration-primary/30 hover:decoration-primary transition-colors duration-200">
+            setup@grantreportkit.com
+          </a>
         </p>
       </section>
     </LegalLayout>
