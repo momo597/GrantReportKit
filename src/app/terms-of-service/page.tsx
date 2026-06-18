@@ -13,8 +13,10 @@ export default function TermsOfServicePage() {
         <h2 className="text-lg font-semibold text-foreground">About the service</h2>
         <p>
           GrantReportKit is a manual beta setup service. We help small nonprofits
-          organize grant report deadlines and reminder dates by extracting
-          information from award letters and grant agreements you share with us.
+          organize grant reporting requirements by extracting deadlines,
+          deliverables, required financial and impact data items to collect,
+          stewardship requirements, owner checklists, and reminder dates from award letters
+          and grant agreements you share with us.
         </p>
       </section>
 
@@ -22,8 +24,8 @@ export default function TermsOfServicePage() {
         <h2 className="text-lg font-semibold text-foreground">What we are not</h2>
         <p>
           GrantReportKit is not legal advice, financial advice, accounting
-          services, or compliance guidance. We provide an organization and
-          reminder service only. You are responsible for confirming all final
+          services, or compliance guidance. We provide a grant reporting
+          readiness setup service only. You are responsible for confirming all final
           reporting requirements, deadlines, and deliverables directly with your
           funders.
         </p>
@@ -32,11 +34,12 @@ export default function TermsOfServicePage() {
       <section>
         <h2 className="text-lg font-semibold text-foreground">Scope of the beta setup</h2>
         <p>
-          The beta setup includes a deadline tracker spreadsheet, reminder
-          schedule, board-friendly summary, and optional Google Calendar import
-          file — all based on up to 5 award letters or grant agreements unless
-          otherwise agreed. The setup fee is $49 one-time unless otherwise
-          agreed.
+          The beta setup includes a deadline tracker spreadsheet, reporting
+          requirements checklist, financial and impact data items to collect,
+          suggested owner/reminder plan, board-friendly summary, and optional
+          Google Calendar import file — all based on up to 5 award letters or
+          grant agreements unless otherwise agreed. The setup fee is $49
+          one-time unless otherwise agreed.
         </p>
       </section>
 
@@ -86,22 +89,23 @@ export default function TermsOfServicePage() {
       <section>
         <h2 className="text-lg font-semibold text-foreground">Accuracy of information</h2>
         <p>
-          We do our best to accurately extract dates, deadlines, and reporting
-          requirements from the documents you provide. However, we extract the
-          dates and requirements we can find, and we do not guarantee
-          completeness or accuracy. You should review the final tracker we
-          deliver and verify all information against your original grant
-          agreements.
+          We do our best to accurately extract dates, deadlines, deliverables,
+          reporting requirements, and required data items from the documents you
+          provide. However, we extract the information we can find, and we do
+          not guarantee completeness or accuracy. You should review the final
+          tracker and checklist we deliver and verify all information against
+          your original grant agreements and funder instructions.
         </p>
       </section>
 
       <section>
         <h2 className="text-lg font-semibold text-foreground">No guaranteed outcome</h2>
         <p>
-          GrantReportKit helps organize grant reporting information and reminder
-          dates, but we do not guarantee that using the tracker will prevent
-          missed deadlines, satisfy funder requirements, or ensure compliance.
-          You are responsible for reviewing the tracker and confirming all final
+          GrantReportKit helps organize grant reporting information, required
+          data items, owner planning, and reminder dates, but we do not
+          guarantee that using the tracker or checklist will prevent missed
+          deadlines, satisfy funder requirements, or ensure compliance. You are
+          responsible for reviewing the final materials and confirming all
           requirements with your funders.
         </p>
       </section>
@@ -120,7 +124,7 @@ export default function TermsOfServicePage() {
         <h2 className="text-lg font-semibold text-foreground">Your responsibilities</h2>
         <p>
           You are responsible for providing accurate documents and confirming
-          that the information in your tracker matches your funder requirements.
+          that the information in your tracker, checklist, and summary matches your funder requirements.
           You should not rely solely on GrantReportKit for compliance with grant
           reporting obligations.
         </p>

@@ -7,10 +7,10 @@ export default function Transformation() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 sm:mb-14">
           <h2 className="font-[family-name:var(--font-fraunces)] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground leading-tight">
-            From award letter to deadline tracker.
+            From award letter to report-readiness kit.
           </h2>
           <p className="mt-4 text-base text-muted max-w-xl mx-auto">
-            You send us the documents. We extract every important date and organize them into something your whole team can use.
+            You send us the documents after review. We extract the reporting deadlines, deliverables, required data items, and reminder dates into something your whole team can use.
           </p>
         </div>
 
@@ -29,7 +29,7 @@ export default function Transformation() {
               </div>
               <div>
                 <p className="text-sm font-semibold text-foreground">Grant Award Letter</p>
-                <p className="text-[11px] text-muted">Ford Foundation — 2024</p>
+                <p className="text-[11px] text-muted">Northstar Community Foundation — 2024</p>
               </div>
             </div>
 
@@ -58,7 +58,7 @@ export default function Transformation() {
 
               <div className="my-3 py-2 px-3 bg-accent/8 border border-accent/20 rounded-lg">
                 <p className="text-[11px] font-medium text-accent/90">
-                  &ldquo;Required: narrative report, audited financials, and <span className="font-bold text-accent">outcome measurements</span>&rdquo;
+                  &ldquo;Required: narrative report, financial summary, and <span className="font-bold text-accent">outcome measurements</span>&rdquo;
                 </p>
               </div>
 
@@ -102,8 +102,8 @@ export default function Transformation() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-foreground">Your Deadline Tracker</p>
-                  <p className="text-[11px] text-muted">Ford Foundation grant</p>
+                  <p className="text-sm font-semibold text-foreground">Your Report-Readiness Kit</p>
+                  <p className="text-[11px] text-muted">Northstar Community Foundation grant</p>
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@ export default function Transformation() {
                 <p className="text-[11px] text-muted font-medium mb-2">Required report items:</p>
                 <div className="flex flex-wrap gap-1.5">
                   <span className="text-[10px] px-2 py-1 rounded-full bg-sage-light text-primary font-medium border border-sage/30">Narrative report</span>
-                  <span className="text-[10px] px-2 py-1 rounded-full bg-sage-light text-primary font-medium border border-sage/30">Audited financials</span>
+                  <span className="text-[10px] px-2 py-1 rounded-full bg-sage-light text-primary font-medium border border-sage/30">Financial summary</span>
                   <span className="text-[10px] px-2 py-1 rounded-full bg-sage-light text-primary font-medium border border-sage/30">Outcome data</span>
                 </div>
               </div>

@@ -27,7 +27,7 @@ export default function Footer() {
 
           <div className="text-center sm:text-left">
             <p className="text-xs text-muted">
-              An organization and reminder service for small nonprofits. Not legal or compliance advice.
+              A grant reporting readiness setup service for small nonprofits. Not legal, financial, accounting, or compliance advice.
             </p>
           </div>
         </div>

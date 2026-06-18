@@ -8,6 +8,15 @@ const GRANT_COUNT_OPTIONS = ["1\u20132", "3\u20135", "6\u201310", "11\u201320", 
 const TRACKING_OPTIONS = ["Google Sheets / Excel", "Google Calendar / Outlook", "CRM", "Project management tool", "Shared drive folders", "Email / memory", "Other"];
 const URGENCY_OPTIONS = ["Yes", "No", "Not sure"];
 const DOCUMENTS_READY_OPTIONS = ["Yes", "No", "I need to find them"];
+const CHALLENGE_OPTIONS = [
+  "Remembering report deadlines",
+  "Collecting financial data",
+  "Collecting impact/program data",
+  "Knowing what the funder requires",
+  "Assigning responsibility across the team",
+  "Pulling everything together close to the deadline",
+  "Not sure",
+];
 
 export default function RequestForm() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -53,7 +62,7 @@ export default function RequestForm() {
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="font-[family-name:var(--font-fraunces)] text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground">Request your $49 beta setup</h2>
-          <p className="mt-4 text-base text-muted leading-relaxed max-w-lg mx-auto">Tell us about your grants first. If your documents are a good fit, we&apos;ll email you a payment link and set up your tracker manually.</p>
+          <p className="mt-4 text-base text-muted leading-relaxed max-w-lg mx-auto">Tell us about your grants first. If your documents are a good fit, we&apos;ll email you a payment link and set up your report-readiness kit manually.</p>
           <p className="mt-3 text-sm text-primary font-medium">No payment is required to request a setup spot.</p>
         </div>
         <form onSubmit={handleSubmit} className="bg-background border border-border rounded-2xl p-6 sm:p-8 shadow-sm space-y-6">
@@ -94,7 +103,7 @@ export default function RequestForm() {
           </div>
 
           <fieldset>
-            <legend className="block text-sm font-medium text-foreground mb-2.5">What do you currently use to track grant deadlines?</legend>
+            <legend className="block text-sm font-medium text-foreground mb-2.5">What do you currently use to track grant deadlines and reporting requirements?</legend>
             <div className="grid sm:grid-cols-2 gap-2.5">
               {TRACKING_OPTIONS.map((option) => (
                 <label key={option} className={`flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl border cursor-pointer transition-all duration-200 ${trackingMethods.includes(option) ? "border-primary/40 bg-primary-light/40" : "border-border hover:border-primary/20"}`}>
@@ -122,13 +131,21 @@ export default function RequestForm() {
           </div>
 
           <div>
-            <label htmlFor="biggest_problem" className="block text-sm font-medium text-foreground mb-1.5">What is the biggest grant deadline problem you want help with? <span className="text-red-500" aria-label="required">*</span></label>
-            <textarea id="biggest_problem" name="biggest_problem" required rows={4} className="w-full px-4 py-3 rounded-xl border border-border bg-card text-foreground text-sm placeholder:text-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200 resize-y" placeholder="Example: We have 6 active grants and report dates are split between PDFs, emails, and a spreadsheet nobody trusts." />
+            <label htmlFor="main_challenge" className="block text-sm font-medium text-foreground mb-1.5">What is harder for your team right now? <span className="text-red-500" aria-label="required">*</span></label>
+            <select id="main_challenge" name="main_challenge" required className="w-full px-4 py-3 rounded-xl border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200 cursor-pointer" defaultValue="">
+              <option value="" disabled>Select the biggest challenge</option>
+              {CHALLENGE_OPTIONS.map((opt) => (<option key={opt} value={opt}>{opt}</option>))}
+            </select>
+          </div>
+
+          <div>
+            <label htmlFor="biggest_problem" className="block text-sm font-medium text-foreground mb-1.5">What is the biggest grant reporting problem you want help with? <span className="text-red-500" aria-label="required">*</span></label>
+            <textarea id="biggest_problem" name="biggest_problem" required rows={4} className="w-full px-4 py-3 rounded-xl border border-border bg-card text-foreground text-sm placeholder:text-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200 resize-y" placeholder="Example: We have 6 active grants and reporting requirements are split between PDFs, emails, and a spreadsheet nobody fully trusts." />
           </div>
 
           <div className="flex items-start gap-3">
             <input type="checkbox" id="consent" name="consent" required className="mt-1 w-4 h-4 rounded border-border text-primary focus:ring-primary/30 cursor-pointer shrink-0" />
-            <label htmlFor="consent" className="text-sm text-muted leading-relaxed cursor-pointer">I understand this is a manual beta setup request. GrantReportKit is an organization and reminder service, not legal, financial, or compliance advice. <span className="text-red-500" aria-label="required">*</span></label>
+            <label htmlFor="consent" className="text-sm text-muted leading-relaxed cursor-pointer">I understand this is a manual beta setup request. GrantReportKit is a grant reporting readiness setup service, not legal, financial, accounting, or compliance advice. <span className="text-red-500" aria-label="required">*</span></label>
           </div>
 
           {status === "error" && (

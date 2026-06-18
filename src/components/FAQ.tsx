@@ -6,36 +6,37 @@ const faqs = [
   {
     question: "Is this software?",
     answer:
-      "Not yet. This is a manual beta setup service. We are validating the problem before building the full product.",
+      "Not yet. GrantReportKit is currently a manual beta setup service. We are validating the workflow before building a full product.",
   },
   {
     question: "What do I send you?",
     answer:
-      "Start by filling out the setup request form. After we review your request, we\u2019ll send instructions for sharing your award letters or grant agreements.",
+      "Start by filling out the setup request form. After we review your request, we\u2019ll send instructions for sharing your award letters or grant agreements. Please do not upload or send documents through the initial form.",
   },
   {
-    question: "What if my documents do not include report dates?",
+    question: "What if my documents do not include useful reporting information?",
     answer:
-      "If we cannot find useful deadline information, we refund you. No questions asked.",
+      "If we cannot find useful reporting deadlines, deliverables, required data items, or stewardship requirements in your documents after payment, we refund the setup fee.",
   },
   {
     question: "Do you write grant reports?",
     answer:
-      "No. We only extract and organize deadlines, report requirements, and reminder dates.",
+      "No. We do not write or submit grant reports. We organize reporting deadlines, deliverables, required financial and impact data items to collect, owner suggestions, and reminder dates based on the documents you provide.",
   },
   {
     question: "Is this legal or compliance advice?",
     answer:
-      "No. GrantReportKit is an organization and reminder service. You should always confirm final requirements with your funder.",
+      "No. GrantReportKit is a grant reporting readiness setup service, not legal, financial, accounting, or compliance advice. You should always confirm final requirements with your funder.",
   },
   {
-    question: "How do I receive the tracker?",
+    question: "How do I receive the report-readiness kit?",
     answer:
-      "We deliver a spreadsheet, reminder schedule, and board-friendly summary by email within 3 business days.",
+      "We deliver the spreadsheet, reporting requirements checklist, reminder schedule, and board-friendly summary by email within 3\u20135 business days after payment and document access.",
   },
   {
     question: "How many grants are included?",
-    answer: "The beta setup includes up to 5 grant award letters. Need more? Mention it in the setup request form and we can discuss.",
+    answer:
+      "The beta setup includes up to 5 award letters or grant agreements. Need more? Mention it in the setup request form and we can discuss.",
   },
 ];
 

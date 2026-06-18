@@ -15,8 +15,11 @@ export default function PrivacyPolicyPage() {
           When you submit the setup request form on our website, we collect the
           information you provide, including your organization name, contact
           name, email address, role, number of active grants, current tracking
-          methods, deadline urgency, document readiness, and the description of
-          your grant deadline problem.
+          methods, deadline urgency, document readiness, the description of
+          your grant reporting problem, and any details you provide about
+          reporting requirements, deliverables, financial data items,
+          impact/program data items, stewardship requirements, owner planning,
+          or reminder needs.
         </p>
       </section>
 
@@ -25,8 +28,8 @@ export default function PrivacyPolicyPage() {
         <p>
           We use the information you submit only to review your setup request,
           determine whether your grants are a good fit for our manual beta
-          service, respond to your inquiry, and deliver the grant deadline
-          tracker setup if you proceed.
+          service, respond to your inquiry, and deliver the grant reporting
+          readiness setup if you proceed.
         </p>
       </section>
 
@@ -35,7 +38,7 @@ export default function PrivacyPolicyPage() {
         <p>
           Please do not send grant award letters or agreements until we provide
           specific instructions for doing so. If documents are later shared with
-          us, they are used only to complete the requested deadline tracker
+          us, they are used only to complete the requested report-readiness
           setup. We do not share, publish, or use your documents for any other
           purpose.
         </p>

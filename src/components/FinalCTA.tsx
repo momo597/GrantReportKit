@@ -6,10 +6,10 @@ export default function FinalCTA() {
 
       <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="font-[family-name:var(--font-fraunces)] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground leading-tight">
-          Stop wondering what grant report is due next.
+          Stop scrambling before every grant report is due.
         </h2>
         <p className="mt-4 text-base text-muted max-w-md mx-auto">
-          Request a setup spot today. If your documents are a good fit, you&apos;ll get your clean deadline tracker within 3 business days of payment.
+          Request a setup spot today. If your documents are a good fit, you&apos;ll get your clean report-readiness kit within 3&ndash;5 business days of payment and document access.
         </p>
 
         <div className="mt-8 flex flex-col items-center gap-4">
@@ -40,7 +40,7 @@ export default function FinalCTA() {
               <svg className="w-3.5 h-3.5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              Refund if no useful dates found
+              Refund if no useful reporting information is found
             </span>
           </div>
         </div>

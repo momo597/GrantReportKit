@@ -18,13 +18,13 @@ export default function Hero() {
             </div>
 
             <h1 className="font-[family-name:var(--font-fraunces)] text-[2rem] sm:text-[2.75rem] lg:text-[3.5rem] font-semibold text-foreground leading-[1.15] sm:leading-[1.1] tracking-tight">
-              Never miss a grant report deadline again.
+              Be ready before every grant report is due.
             </h1>
 
             <p className="mt-4 sm:mt-6 text-base sm:text-lg text-muted leading-relaxed max-w-xl">
-              Tell us about your grants first. If it&apos;s a good fit, we&apos;ll
-              send next steps for sharing your award letters and setting up your
-              grant deadline tracker.
+              GrantReportKit turns award letters and grant agreements into a
+              clear report-readiness plan: deadlines, deliverables, required
+              financial and impact data items to collect, owner checklists, and reminder dates.
             </p>
 
             <div className="mt-6 sm:mt-8">
@@ -48,14 +48,14 @@ export default function Hero() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
               <p className="text-sm text-muted">
-                If we cannot find useful deadline information in your documents after payment, we refund you.
+                If we cannot find useful reporting deadlines, deliverables, or required data items in your documents after payment, we refund you.
               </p>
             </div>
 
           </div>
 
           {/* Right: Visual mockup — stacked on mobile, overlapping on desktop */}
-          <div className="relative sm:min-h-[380px]" aria-label="Visual showing award letter transformed into a deadline tracker">
+          <div className="relative sm:min-h-[380px]" aria-label="Visual showing award letter transformed into a report-readiness kit">
             {/* Background decorative elements */}
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-sage-light rounded-full blur-3xl opacity-60" aria-hidden="true" />
             <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-accent-light rounded-full blur-3xl opacity-40" aria-hidden="true" />
@@ -118,7 +118,7 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Deadline tracker card (front) */}
+            {/* Report-readiness kit card (front) */}
             <div className="relative sm:ml-auto w-full sm:w-[75%] sm:mt-12 z-30">
               <div className="bg-card border border-border rounded-2xl shadow-xl shadow-primary/5 overflow-hidden">
                 <div className="px-4 sm:px-5 py-3 sm:py-3.5 border-b border-border bg-primary/[0.03]">
@@ -129,7 +129,7 @@ export default function Hero() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                         </svg>
                       </div>
-                      <span className="text-xs font-semibold text-foreground">Deadline Tracker</span>
+                      <span className="text-xs font-semibold text-foreground">Report-Readiness Kit</span>
                     </div>
                     <span className="text-[10px] text-muted">3 grants</span>
                   </div>
@@ -139,7 +139,7 @@ export default function Hero() {
                   <div className="px-4 sm:px-5 py-2.5 sm:py-3">
                     <div className="flex items-center justify-between gap-2">
                       <div className="min-w-0">
-                        <p className="text-xs font-medium text-foreground truncate">Ford Foundation</p>
+                        <p className="text-xs font-medium text-foreground truncate">Northstar Community Foundation</p>
                         <p className="text-[10px] text-muted mt-0.5">Annual report due</p>
                       </div>
                       <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200 shrink-0">
@@ -155,7 +155,7 @@ export default function Hero() {
                   <div className="px-4 sm:px-5 py-2.5 sm:py-3">
                     <div className="flex items-center justify-between gap-2">
                       <div className="min-w-0">
-                        <p className="text-xs font-medium text-foreground truncate">Community First</p>
+                        <p className="text-xs font-medium text-foreground truncate">Riverdale Family Fund</p>
                         <p className="text-[10px] text-muted mt-0.5">Mid-year progress report</p>
                       </div>
                       <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-green-50 text-green-700 border border-green-200 shrink-0">
@@ -166,7 +166,7 @@ export default function Hero() {
                   <div className="px-4 sm:px-5 py-2.5 sm:py-3">
                     <div className="flex items-center justify-between gap-2">
                       <div className="min-w-0">
-                        <p className="text-xs font-medium text-foreground truncate">United Way</p>
+                        <p className="text-xs font-medium text-foreground truncate">Maple Valley United</p>
                         <p className="text-[10px] text-muted mt-0.5">Final report + financials</p>
                       </div>
                       <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-green-50 text-green-700 border border-green-200 shrink-0">
@@ -181,7 +181,7 @@ export default function Hero() {
                     <svg className="w-3.5 h-3.5 text-primary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
                     </svg>
-                    <span className="text-[10px] text-primary font-medium">Required: narrative, budget report, outcomes data</span>
+                    <span className="text-[10px] text-primary font-medium">Required: narrative, financial summary, outcomes data</span>
                   </div>
                 </div>
               </div>

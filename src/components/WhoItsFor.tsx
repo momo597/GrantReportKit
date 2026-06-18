@@ -1,15 +1,15 @@
 export default function WhoItsFor() {
   const goodFit = [
     "You manage 3–20 active grants",
-    "You use Google Sheets, Excel, Outlook, or shared drives to track dates",
-    "You worry a reporting deadline could slip through the cracks",
-    "Your board asks what reports are due soon",
-    "Grant knowledge lives in one person's head",
+    "Multiple people need to contribute data before reports are due",
+    "You use spreadsheets, shared drives, or email to track what funders need",
+    "Your board asks about reporting readiness and upcoming deadlines",
+    "Grant reporting knowledge lives in one person\u2019s head",
   ];
 
   const notFit = [
     "You already use a full grant management platform",
-    "You only manage one simple grant",
+    "You only have 1\u20132 simple grants (calendar reminders may be enough)",
     "You need grant discovery or proposal writing help",
   ];
 
@@ -18,11 +18,12 @@ export default function WhoItsFor() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <h2 className="font-[family-name:var(--font-fraunces)] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
-            Built for tiny nonprofit teams
+            Built for small nonprofits managing multiple grants
           </h2>
           <p className="mt-4 text-base text-muted leading-relaxed">
-            GrantReportKit is for small nonprofits that have won grants but do not
-            have a full grant management system or a dedicated compliance person.
+            GrantReportKit is best for small nonprofits managing multiple active
+            grants, especially when program, finance, and leadership teams all
+            need to contribute information before reports are due.
           </p>
         </div>
 

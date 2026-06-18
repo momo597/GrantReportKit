@@ -1,24 +1,28 @@
 export default function WhatYouGet() {
   const features = [
     {
-      title: "Grant deadline tracker",
-      description: "One clear spreadsheet with every report due date across all your grants.",
+      title: "Grant report deadline tracker",
+      description: "Every report due date across all your grants in one clear spreadsheet.",
     },
     {
-      title: "Report due dates",
-      description: "Interim, annual, and final report deadlines extracted from each award letter.",
+      title: "Reporting requirements checklist",
+      description: "What each funder expects: narrative, financials, outcomes, attachments — listed per grant.",
     },
     {
-      title: "Renewal & grant period dates",
-      description: "Know when each grant starts, ends, and when renewal applications are due.",
+      title: "Financial data items to collect",
+      description: "Budget vs. actual, expenditure summaries, and financial documentation each funder requires.",
     },
     {
-      title: "Required report items",
-      description: "Narrative reports, financials, outcome data — listed for each funder.",
+      title: "Impact/program data items to collect",
+      description: "Outcome metrics, beneficiary counts, program milestones, and narrative deliverables identified per grant.",
     },
     {
-      title: "30 / 14 / 3-day reminder schedule",
-      description: "Three reminders before each deadline so nothing sneaks up on you.",
+      title: "Suggested owners for each item",
+      description: "Who should be responsible for collecting each piece — finance, programs, or leadership.",
+    },
+    {
+      title: "Reminder dates before reports are due",
+      description: "30, 14, and 3-day reminders so your team has time to collect data before the deadline.",
     },
     {
       title: "Board-friendly summary",
@@ -26,7 +30,7 @@ export default function WhatYouGet() {
     },
     {
       title: "Optional Google Calendar import",
-      description: "An .ics file you can drop into Google Calendar or Outlook.",
+      description: "An .ics file you can drop into Google Calendar or Outlook for deadline alerts.",
     },
   ];
 
@@ -35,14 +39,14 @@ export default function WhatYouGet() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 sm:mb-14">
           <h2 className="font-[family-name:var(--font-fraunces)] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
-            Everything you need to stop guessing what is due
+            Your report-readiness kit includes
           </h2>
           <p className="mt-4 text-base text-muted max-w-lg mx-auto">
-            One $49 setup. Seven deliverables. All sent to your inbox.
+            One $49 setup. Eight deliverables. A practical setup to help your team stay ready.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
           {features.map((feature) => (
             <div
               key={feature.title}

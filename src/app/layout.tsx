@@ -14,13 +14,13 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "GrantReportKit — Grant Report Reminder for Small Nonprofits",
+  title: "GrantReportKit — Grant Reporting Readiness for Small Nonprofits",
   description:
-    "Send us your grant award letters and get a clean grant deadline tracker with report dates, renewal dates, required documents, and reminders.",
+    "GrantReportKit helps small nonprofits turn award letters into grant report deadlines, deliverables, required financial and impact data, owner checklists, and reminder dates.",
   openGraph: {
-    title: "Never miss a grant report deadline again",
+    title: "Be ready before every grant report is due",
     description:
-      "GrantReportKit turns award letters into a clean grant deadline tracker for small nonprofits.",
+      "GrantReportKit turns award letters into a report-readiness plan: deadlines, deliverables, required data, and reminders for small nonprofits.",
     type: "website",
   },
 };

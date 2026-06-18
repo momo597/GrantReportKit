@@ -1,9 +1,11 @@
 export default function Pricing() {
   const includes = [
-    "Up to 5 award letters",
+    "Up to 5 award letters or grant agreements",
     "Report deadline extraction",
-    "Renewal dates when available",
-    "Required report items",
+    "Reporting requirements checklist",
+    "Required financial and impact data items to collect",
+    "Required report items and deliverables",
+    "Suggested owner/reminder plan",
     "30 / 14 / 3-day reminder schedule",
     "Board-friendly summary",
     "Optional Google Calendar import file",
@@ -83,7 +85,7 @@ export default function Pricing() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
               <p className="text-xs text-foreground/80 leading-relaxed">
-                <span className="font-semibold">Refund guarantee:</span> If we cannot find useful deadline information in your documents after payment, we refund you.
+                <span className="font-semibold">Refund guarantee:</span> If we cannot find useful reporting deadlines, deliverables, or required data items in your documents after payment, we refund you.
               </p>
             </div>
 
