@@ -15,9 +15,9 @@ export default function Footer() {
             </div>
 
             <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2" aria-label="Footer navigation">
-              <a href="#" className="text-xs text-muted hover:text-foreground transition-colors duration-200">Privacy Policy</a>
-              <a href="#" className="text-xs text-muted hover:text-foreground transition-colors duration-200">Terms of Service</a>
-              <a href="#" className="text-xs text-muted hover:text-foreground transition-colors duration-200">Refund Policy</a>
+              <a href="/privacy-policy" className="text-xs text-muted hover:text-foreground transition-colors duration-200">Privacy Policy</a>
+              <a href="/terms-of-service" className="text-xs text-muted hover:text-foreground transition-colors duration-200">Terms of Service</a>
+              <a href="/refund-policy" className="text-xs text-muted hover:text-foreground transition-colors duration-200">Refund Policy</a>
             </nav>
           </div>
 
