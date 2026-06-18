@@ -1,4 +1,4 @@
-import { PAYMENT_URL, SUPPORT_EMAIL } from "@/lib/constants";
+import { SUPPORT_EMAIL } from "@/lib/constants";
 
 export default function Pricing() {
   const includes = [
@@ -18,9 +18,9 @@ export default function Pricing() {
           <h2 className="font-[family-name:var(--font-fraunces)] text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground">
             Beta setup: $49 one-time
           </h2>
-          <p className="mt-4 text-base text-muted max-w-lg mx-auto">
-            For the first 10 nonprofits, we will manually set up your first
-            grant deadline tracker.
+          <p className="mt-4 text-base text-muted max-w-xl mx-auto leading-relaxed">
+            Request a setup spot first. If your documents are a good fit,
+            we&apos;ll send you a payment link before starting the manual setup.
           </p>
         </div>
 
@@ -66,14 +66,18 @@ export default function Pricing() {
 
             {/* CTA */}
             <a
-              href={PAYMENT_URL}
+              href="#request-setup"
               className="w-full inline-flex items-center justify-center px-6 py-4 text-base font-semibold text-white bg-primary rounded-xl hover:bg-primary-dark transition-all duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary shadow-md hover:shadow-lg"
             >
-              Get my tracker set up — $49
+              Request my $49 beta setup
               <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
               </svg>
             </a>
+
+            <p className="mt-4 text-xs text-muted text-center leading-relaxed">
+              We&apos;ll review your needs first. You only pay if your documents are a good fit.
+            </p>
 
             {/* Guarantee */}
             <div className="mt-5 flex items-start gap-2.5 p-3 rounded-xl bg-accent-light border border-accent/15">
@@ -81,7 +85,7 @@ export default function Pricing() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
               <p className="text-xs text-foreground/80 leading-relaxed">
-                <span className="font-semibold">Refund guarantee:</span> If we cannot find useful deadline information in your documents, we refund you.
+                <span className="font-semibold">Refund guarantee:</span> If we cannot find useful deadline information in your documents after payment, we refund you.
               </p>
             </div>
 

@@ -8,6 +8,7 @@ import WhoItsFor from "@/components/WhoItsFor";
 import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
+import RequestForm from "@/components/RequestForm";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
         <Pricing />
         <FAQ />
         <FinalCTA />
+        <RequestForm />
       </main>
       <Footer />
     </>

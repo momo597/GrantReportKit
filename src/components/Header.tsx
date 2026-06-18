@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { PAYMENT_URL } from "@/lib/constants";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -23,25 +22,17 @@ export default function Header() {
           </a>
 
           <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
-            <a href="#how-it-works" className="text-sm text-muted hover:text-foreground transition-colors duration-200">
-              How it works
-            </a>
-            <a href="#what-you-get" className="text-sm text-muted hover:text-foreground transition-colors duration-200">
-              What you get
-            </a>
-            <a href="#pricing" className="text-sm text-muted hover:text-foreground transition-colors duration-200">
-              Pricing
-            </a>
-            <a href="#faq" className="text-sm text-muted hover:text-foreground transition-colors duration-200">
-              FAQ
-            </a>
+            <a href="#how-it-works" className="text-sm text-muted hover:text-foreground transition-colors duration-200">How it works</a>
+            <a href="#what-you-get" className="text-sm text-muted hover:text-foreground transition-colors duration-200">What you get</a>
+            <a href="#pricing" className="text-sm text-muted hover:text-foreground transition-colors duration-200">Pricing</a>
+            <a href="#faq" className="text-sm text-muted hover:text-foreground transition-colors duration-200">FAQ</a>
           </nav>
 
           <a
-            href={PAYMENT_URL}
+            href="#request-setup"
             className="hidden md:inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-primary rounded-full hover:bg-primary-dark transition-colors duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary shadow-sm"
           >
-            Get my tracker set up
+            Request my $49 beta setup
           </a>
 
           <button
@@ -68,8 +59,8 @@ export default function Header() {
               <a href="#what-you-get" className="text-sm text-muted hover:text-foreground transition-colors duration-200" onClick={() => setMobileOpen(false)}>What you get</a>
               <a href="#pricing" className="text-sm text-muted hover:text-foreground transition-colors duration-200" onClick={() => setMobileOpen(false)}>Pricing</a>
               <a href="#faq" className="text-sm text-muted hover:text-foreground transition-colors duration-200" onClick={() => setMobileOpen(false)}>FAQ</a>
-              <a href={PAYMENT_URL} className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-primary rounded-full hover:bg-primary-dark transition-colors duration-200 cursor-pointer mt-2">
-                Get my tracker set up
+              <a href="#request-setup" className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-primary rounded-full hover:bg-primary-dark transition-colors duration-200 cursor-pointer mt-2" onClick={() => setMobileOpen(false)}>
+                Request my $49 beta setup
               </a>
             </div>
           </nav>
