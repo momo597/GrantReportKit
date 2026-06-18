@@ -1,12 +1,12 @@
 export default function Transformation() {
   return (
-    <section className="py-20 sm:py-28 relative overflow-hidden">
+    <section className="py-14 sm:py-20 lg:py-28 relative overflow-hidden">
       {/* Background accent */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-sage-light/20 to-background" aria-hidden="true" />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
-          <h2 className="font-[family-name:var(--font-fraunces)] text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight">
+        <div className="text-center mb-10 sm:mb-14">
+          <h2 className="font-[family-name:var(--font-fraunces)] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground leading-tight">
             From award letter to deadline tracker.
           </h2>
           <p className="mt-4 text-base text-muted max-w-xl mx-auto">
@@ -16,7 +16,7 @@ export default function Transformation() {
 
         <div className="grid md:grid-cols-[1fr,auto,1fr] gap-6 md:gap-4 items-center">
           {/* Left: Messy award letter */}
-          <div className="bg-cream border border-border rounded-2xl p-6 shadow-sm relative">
+          <div className="bg-cream border border-border rounded-2xl p-4 sm:p-6 shadow-sm relative">
             <div className="absolute top-4 right-4">
               <span className="text-[10px] font-medium text-muted uppercase tracking-wider">Before</span>
             </div>
@@ -94,7 +94,7 @@ export default function Transformation() {
               <span className="text-[10px] font-medium text-primary uppercase tracking-wider">After</span>
             </div>
 
-            <div className="px-6 py-4 border-b border-border">
+            <div className="px-4 sm:px-6 py-3 sm:py-4 border-b border-border">
               <div className="flex items-center gap-2.5">
                 <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
                   <svg className="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -108,7 +108,7 @@ export default function Transformation() {
               </div>
             </div>
 
-            <div className="px-6 py-4 space-y-4">
+            <div className="px-4 sm:px-6 py-3 sm:py-4 space-y-3 sm:space-y-4">
               {/* Report due */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2.5">

@@ -2,7 +2,7 @@ import { SUPPORT_EMAIL } from "@/lib/constants";
 
 export default function Hero() {
   return (
-    <section className="relative py-20 sm:py-28 lg:py-36 overflow-hidden">
+    <section className="relative py-12 sm:py-20 lg:py-32 overflow-hidden">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-[0.03]" aria-hidden="true">
         <div className="absolute inset-0" style={{
@@ -11,28 +11,28 @@ export default function Hero() {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
           {/* Left: Copy */}
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-light border border-sage/30 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-light border border-sage/30 mb-5 sm:mb-6">
               <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
               <span className="text-xs font-medium text-primary">Beta — 10 spots available</span>
             </div>
 
-            <h1 className="font-[family-name:var(--font-fraunces)] text-4xl sm:text-5xl lg:text-[3.5rem] font-semibold text-foreground leading-[1.1] tracking-tight">
+            <h1 className="font-[family-name:var(--font-fraunces)] text-[2rem] sm:text-[2.75rem] lg:text-[3.5rem] font-semibold text-foreground leading-[1.15] sm:leading-[1.1] tracking-tight">
               Never miss a grant report deadline again.
             </h1>
 
-            <p className="mt-6 text-lg text-muted leading-relaxed max-w-xl">
+            <p className="mt-4 sm:mt-6 text-base sm:text-lg text-muted leading-relaxed max-w-xl">
               Send us your award letters. We turn them into a clean grant
               deadline tracker with report dates, renewal dates, required
               documents, and reminders.
             </p>
 
-            <div className="mt-8 flex flex-col sm:flex-row items-start gap-4">
+            <div className="mt-6 sm:mt-8">
               <a
                 href="#request-setup"
-                className="inline-flex items-center px-7 py-3.5 text-base font-medium text-white bg-primary rounded-full hover:bg-primary-dark transition-all duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary shadow-md hover:shadow-lg"
+                className="inline-flex items-center px-6 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-base font-medium text-white bg-primary rounded-full hover:bg-primary-dark transition-all duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary shadow-md hover:shadow-lg min-h-[44px]"
               >
                 Request my $49 beta setup
                 <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -41,12 +41,12 @@ export default function Hero() {
               </a>
             </div>
 
-            <p className="mt-4 text-sm text-muted">
+            <p className="mt-3 sm:mt-4 text-sm text-muted">
               We&apos;ll review your needs first. You only pay if your documents are a good fit.
             </p>
 
-            <div className="mt-3 flex items-center gap-2">
-              <svg className="w-4 h-4 text-accent shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <div className="mt-3 flex items-start gap-2">
+              <svg className="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
               <p className="text-sm text-muted">
@@ -54,7 +54,7 @@ export default function Hero() {
               </p>
             </div>
 
-            <p className="mt-4 text-sm text-muted">
+            <p className="mt-3 sm:mt-4 text-sm text-muted">
               Questions?{" "}
               <a href={`mailto:${SUPPORT_EMAIL}`} className="text-primary underline decoration-primary/30 hover:decoration-primary transition-colors duration-200">
                 {SUPPORT_EMAIL}
@@ -62,15 +62,15 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* Right: Visual mockup showing transformation */}
-          <div className="relative" aria-label="Visual showing award letter transformed into a deadline tracker">
+          {/* Right: Visual mockup — stacked on mobile, overlapping on desktop */}
+          <div className="relative sm:min-h-[380px]" aria-label="Visual showing award letter transformed into a deadline tracker">
             {/* Background decorative elements */}
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-sage-light rounded-full blur-3xl opacity-60" aria-hidden="true" />
             <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-accent-light rounded-full blur-3xl opacity-40" aria-hidden="true" />
 
-            {/* Award letter card (back/tilted) */}
-            <div className="absolute top-4 -left-2 sm:left-2 w-[65%] transform -rotate-3 z-10">
-              <div className="bg-cream border border-border rounded-2xl p-5 shadow-sm">
+            {/* Award letter card (back/tilted) — hidden on very small, shown tilted on sm+ */}
+            <div className="hidden sm:block absolute top-4 left-2 w-[60%] transform -rotate-3 z-10">
+              <div className="bg-cream border border-border rounded-2xl p-4 sm:p-5 shadow-sm">
                 <div className="flex items-center gap-2 mb-3">
                   <div className="w-6 h-6 rounded bg-accent/20 flex items-center justify-center">
                     <svg className="w-3.5 h-3.5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -94,8 +94,31 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Arrow indicator */}
-            <div className="absolute top-1/2 left-[52%] -translate-x-1/2 -translate-y-1/2 z-20">
+            {/* Mobile: simple award letter badge */}
+            <div className="sm:hidden mb-3">
+              <div className="inline-flex bg-cream border border-border rounded-xl px-3 py-2 shadow-sm">
+                <div className="flex items-center gap-2">
+                  <div className="w-5 h-5 rounded bg-accent/20 flex items-center justify-center">
+                    <svg className="w-3 h-3 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                  </div>
+                  <span className="text-[10px] font-semibold text-foreground">Award Letter</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile: arrow between badge and tracker */}
+            <div className="sm:hidden flex justify-center mb-3">
+              <div className="w-8 h-8 rounded-full bg-primary shadow-lg flex items-center justify-center">
+                <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Arrow indicator — desktop only (positioned over the overlapping cards) */}
+            <div className="hidden sm:block absolute top-1/2 left-[52%] -translate-x-1/2 -translate-y-1/2 z-20">
               <div className="w-10 h-10 rounded-full bg-primary shadow-lg flex items-center justify-center">
                 <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -104,9 +127,9 @@ export default function Hero() {
             </div>
 
             {/* Deadline tracker card (front) */}
-            <div className="relative ml-auto w-[75%] mt-16 sm:mt-12 z-30">
+            <div className="relative sm:ml-auto w-full sm:w-[75%] sm:mt-12 z-30">
               <div className="bg-card border border-border rounded-2xl shadow-xl shadow-primary/5 overflow-hidden">
-                <div className="px-5 py-3.5 border-b border-border bg-primary/[0.03]">
+                <div className="px-4 sm:px-5 py-3 sm:py-3.5 border-b border-border bg-primary/[0.03]">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                       <div className="w-5 h-5 rounded bg-primary/10 flex items-center justify-center">
@@ -121,14 +144,13 @@ export default function Hero() {
                 </div>
 
                 <div className="divide-y divide-border">
-                  {/* Row 1 */}
-                  <div className="px-5 py-3">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="text-xs font-medium text-foreground">Ford Foundation</p>
+                  <div className="px-4 sm:px-5 py-2.5 sm:py-3">
+                    <div className="flex items-center justify-between gap-2">
+                      <div className="min-w-0">
+                        <p className="text-xs font-medium text-foreground truncate">Ford Foundation</p>
                         <p className="text-[10px] text-muted mt-0.5">Annual report due</p>
                       </div>
-                      <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200">
+                      <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200 shrink-0">
                         Apr 30
                       </span>
                     </div>
@@ -138,41 +160,33 @@ export default function Hero() {
                       <span className="text-[9px] px-1.5 py-0.5 rounded bg-primary-light text-primary font-medium">3d</span>
                     </div>
                   </div>
-                  {/* Row 2 */}
-                  <div className="px-5 py-3">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="text-xs font-medium text-foreground">Community First</p>
+                  <div className="px-4 sm:px-5 py-2.5 sm:py-3">
+                    <div className="flex items-center justify-between gap-2">
+                      <div className="min-w-0">
+                        <p className="text-xs font-medium text-foreground truncate">Community First</p>
                         <p className="text-[10px] text-muted mt-0.5">Mid-year progress report</p>
                       </div>
-                      <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-green-50 text-green-700 border border-green-200">
+                      <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-green-50 text-green-700 border border-green-200 shrink-0">
                         Jun 15
                       </span>
                     </div>
-                    <div className="flex gap-1.5 mt-2">
-                      <span className="text-[9px] px-1.5 py-0.5 rounded bg-sage-light text-primary font-medium">30d</span>
-                      <span className="text-[9px] px-1.5 py-0.5 rounded bg-sage-light text-primary font-medium">14d</span>
-                      <span className="text-[9px] px-1.5 py-0.5 rounded bg-sage-light text-primary font-medium">3d</span>
-                    </div>
                   </div>
-                  {/* Row 3 */}
-                  <div className="px-5 py-3">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="text-xs font-medium text-foreground">United Way</p>
+                  <div className="px-4 sm:px-5 py-2.5 sm:py-3">
+                    <div className="flex items-center justify-between gap-2">
+                      <div className="min-w-0">
+                        <p className="text-xs font-medium text-foreground truncate">United Way</p>
                         <p className="text-[10px] text-muted mt-0.5">Final report + financials</p>
                       </div>
-                      <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-green-50 text-green-700 border border-green-200">
+                      <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-green-50 text-green-700 border border-green-200 shrink-0">
                         Aug 1
                       </span>
                     </div>
                   </div>
                 </div>
 
-                {/* Required items badge */}
-                <div className="px-5 py-3 border-t border-border bg-sage-light/30">
+                <div className="px-4 sm:px-5 py-2.5 sm:py-3 border-t border-border bg-sage-light/30">
                   <div className="flex items-center gap-2">
-                    <svg className="w-3.5 h-3.5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <svg className="w-3.5 h-3.5 text-primary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
                     </svg>
                     <span className="text-[10px] text-primary font-medium">Required: narrative, budget report, outcomes data</span>

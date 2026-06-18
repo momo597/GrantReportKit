@@ -33,10 +33,10 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="how-it-works" className="py-20 sm:py-28 bg-card">
+    <section id="how-it-works" className="py-14 sm:py-20 lg:py-28 bg-card">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
-          <h2 className="font-[family-name:var(--font-fraunces)] text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground">
+        <div className="text-center mb-10 sm:mb-14">
+          <h2 className="font-[family-name:var(--font-fraunces)] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
             How GrantReportKit works
           </h2>
           <p className="mt-4 text-base text-muted max-w-lg mx-auto">
@@ -44,7 +44,7 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-8">
           {steps.map((item, index) => (
             <div key={item.step} className="relative">
               {/* Connector line */}

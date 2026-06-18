@@ -46,11 +46,11 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
     <div className="border-b border-border last:border-b-0">
       <button
         type="button"
-        className="w-full flex items-center justify-between py-5 text-left cursor-pointer group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded-lg"
+        className="w-full flex items-center justify-between py-4 sm:py-5 text-left cursor-pointer group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded-lg min-h-[44px]"
         onClick={() => setOpen(!open)}
         aria-expanded={open}
       >
-        <span className="text-base font-medium text-foreground pr-4 group-hover:text-primary transition-colors duration-200">
+        <span className="text-sm sm:text-base font-medium text-foreground pr-3 sm:pr-4 group-hover:text-primary transition-colors duration-200">
           {question}
         </span>
         <div className={`w-7 h-7 rounded-full border border-border flex items-center justify-center shrink-0 transition-all duration-200 ${open ? "bg-primary border-primary" : "group-hover:border-primary/40"}`}>
@@ -68,7 +68,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
       <div
         className={`overflow-hidden transition-all duration-200 ${open ? "max-h-40 pb-5" : "max-h-0"}`}
       >
-        <p className="text-sm text-muted leading-relaxed pr-12">{answer}</p>
+        <p className="text-sm text-muted leading-relaxed pr-8 sm:pr-12">{answer}</p>
       </div>
     </div>
   );
@@ -76,15 +76,15 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 
 export default function FAQ() {
   return (
-    <section id="faq" className="py-20 sm:py-28 bg-card">
+    <section id="faq" className="py-14 sm:py-20 lg:py-28 bg-card">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="font-[family-name:var(--font-fraunces)] text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="font-[family-name:var(--font-fraunces)] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
             Frequently asked questions
           </h2>
         </div>
 
-        <div className="bg-background border border-border rounded-2xl px-6 sm:px-8">
+        <div className="bg-background border border-border rounded-2xl px-4 sm:px-6 md:px-8">
           {faqs.map((faq) => (
             <FAQItem key={faq.question} question={faq.question} answer={faq.answer} />
           ))}

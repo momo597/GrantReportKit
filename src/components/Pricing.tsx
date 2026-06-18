@@ -12,10 +12,10 @@ export default function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="py-20 sm:py-28">
+    <section id="pricing" className="py-14 sm:py-20 lg:py-28">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="font-[family-name:var(--font-fraunces)] text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="font-[family-name:var(--font-fraunces)] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
             Beta setup: $49 one-time
           </h2>
           <p className="mt-4 text-base text-muted max-w-xl mx-auto leading-relaxed">
@@ -25,7 +25,7 @@ export default function Pricing() {
         </div>
 
         <div className="max-w-lg mx-auto">
-          <div className="relative bg-card border-2 border-primary/20 rounded-3xl p-8 sm:p-10 shadow-lg shadow-primary/5">
+          <div className="relative bg-card border-2 border-primary/20 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 shadow-lg shadow-primary/5">
             {/* Badge */}
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
               <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-primary text-white text-xs font-medium shadow-md">
@@ -67,7 +67,7 @@ export default function Pricing() {
             {/* CTA */}
             <a
               href="#request-setup"
-              className="w-full inline-flex items-center justify-center px-6 py-4 text-base font-semibold text-white bg-primary rounded-xl hover:bg-primary-dark transition-all duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary shadow-md hover:shadow-lg"
+              className="w-full inline-flex items-center justify-center px-6 py-3.5 sm:py-4 text-base font-semibold text-white bg-primary rounded-xl hover:bg-primary-dark transition-all duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary shadow-md hover:shadow-lg min-h-[44px]"
             >
               Request my $49 beta setup
               <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">

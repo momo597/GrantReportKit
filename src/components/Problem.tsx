@@ -39,23 +39,23 @@ export default function Problem() {
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-card">
+    <section className="py-14 sm:py-20 lg:py-28 bg-card">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="font-[family-name:var(--font-fraunces)] text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight">
+          <h2 className="font-[family-name:var(--font-fraunces)] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground leading-tight">
             Grant deadlines get missed when they live in too many places.
           </h2>
-          <p className="mt-5 text-base text-muted leading-relaxed">
+          <p className="mt-4 sm:mt-5 text-sm sm:text-base text-muted leading-relaxed">
             A small nonprofit can win the grant and still lose time, trust, or
             future funding because the reporting deadline was not clearly tracked.
           </p>
         </div>
 
-        <div className="mt-14 grid sm:grid-cols-2 gap-5">
+        <div className="mt-10 sm:mt-14 grid sm:grid-cols-2 gap-4 sm:gap-5">
           {painCards.map((card) => (
             <div
               key={card.title}
-              className="group bg-background border border-border rounded-2xl p-6 hover:border-primary/20 hover:shadow-sm transition-all duration-200"
+              className="group bg-background border border-border rounded-2xl p-5 sm:p-6 hover:border-primary/20 hover:shadow-sm transition-all duration-200"
             >
               <div className="w-10 h-10 rounded-xl bg-cream flex items-center justify-center text-foreground/70 group-hover:text-primary transition-colors duration-200">
                 {card.icon}

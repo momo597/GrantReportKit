@@ -14,10 +14,10 @@ export default function WhoItsFor() {
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-card">
+    <section className="py-14 sm:py-20 lg:py-28 bg-card">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
-          <h2 className="font-[family-name:var(--font-fraunces)] text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground">
+          <h2 className="font-[family-name:var(--font-fraunces)] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
             Built for tiny nonprofit teams
           </h2>
           <p className="mt-4 text-base text-muted leading-relaxed">
@@ -26,7 +26,7 @@ export default function WhoItsFor() {
           </p>
         </div>
 
-        <div className="mt-12 grid md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="mt-8 sm:mt-12 grid md:grid-cols-2 gap-5 sm:gap-8 lg:gap-12">
           {/* Good fit */}
           <div className="bg-primary-light/40 border border-primary/10 rounded-2xl p-6 sm:p-8">
             <div className="flex items-center gap-2 mb-5">
