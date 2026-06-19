@@ -16,12 +16,22 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "GrantReportKit — Grant Reporting Readiness for Small Nonprofits",
   description:
-    "GrantReportKit helps small nonprofits turn award letters into grant report deadlines, deliverables, required financial and impact data, owner checklists, and reminder dates.",
+    "Turn award letters and grant agreements into a grant reporting readiness plan with deadlines, deliverables, financial and impact data items to collect, owner checklists, and reminders.",
   openGraph: {
-    title: "Be ready before every grant report is due",
+    title: "GrantReportKit — Grant Reporting Readiness for Small Nonprofits",
     description:
-      "GrantReportKit turns award letters into a report-readiness plan: deadlines, deliverables, required data, and reminders for small nonprofits.",
+      "Turn award letters and grant agreements into a grant reporting readiness plan with deadlines, deliverables, financial and impact data items to collect, owner checklists, and reminders.",
     type: "website",
+    url: "https://grantreportkit.com",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GrantReportKit — Grant Reporting Readiness for Small Nonprofits",
+    description:
+      "Turn award letters and grant agreements into a grant reporting readiness plan with deadlines, deliverables, financial and impact data items to collect, owner checklists, and reminders.",
+  },
+  alternates: {
+    canonical: "https://grantreportkit.com",
   },
 };
 
