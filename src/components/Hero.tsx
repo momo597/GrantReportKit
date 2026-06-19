@@ -24,7 +24,8 @@ export default function Hero() {
             <p className="mt-4 sm:mt-6 text-base sm:text-lg text-muted leading-relaxed max-w-xl">
               GrantReportKit turns award letters and grant agreements into a
               clear report-readiness plan: deadlines, deliverables, required
-              financial and impact data items to collect, owner checklists, and reminder dates.
+              financial and impact data items to collect, owner checklists,
+              stakeholder follow-up plan, and reminder dates.
             </p>
 
             <div className="mt-6 sm:mt-8">

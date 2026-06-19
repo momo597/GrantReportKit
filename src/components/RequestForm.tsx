@@ -49,7 +49,7 @@ export default function RequestForm() {
               <svg className="w-7 h-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
             </div>
             <h2 className="font-[family-name:var(--font-fraunces)] text-2xl sm:text-3xl font-semibold text-foreground">Thanks &mdash; your setup request was received.</h2>
-            <p className="mt-4 text-base text-muted leading-relaxed max-w-md mx-auto">We&apos;ll review your answers and email you next steps. If your grants are a good fit for the beta setup, we&apos;ll send payment instructions and a secure way to share your award letters.</p>
+            <p className="mt-4 text-base text-muted leading-relaxed max-w-md mx-auto">We&apos;ll review your answers and email you next steps. If your grants are a good fit for the beta setup, we&apos;ll send payment instructions and instructions for sharing your award letters.</p>
             <p className="mt-4 text-sm text-muted">If you have questions, you can contact us at{" "}<a href={`mailto:${CONTACT_EMAIL}`} className="text-primary underline decoration-primary/30 hover:decoration-primary transition-colors duration-200">{CONTACT_EMAIL}</a></p>
           </div>
         </div>
@@ -158,7 +158,7 @@ export default function RequestForm() {
             {status === "loading" ? (<><svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" aria-hidden="true"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" /><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" /></svg>Sending request&hellip;</>) : ("Send my setup request")}
           </button>
 
-          <p className="text-xs text-muted text-center leading-relaxed pt-1">Please do not upload grant documents yet. If your request is a good fit, we&apos;ll email you next steps and a secure way to send your award letters.</p>
+          <p className="text-xs text-muted text-center leading-relaxed pt-1">Please do not upload grant documents yet. If your request is a good fit, we&apos;ll email you next steps and instructions for sharing your award letters.</p>
         </form>
       </div>
     </section>

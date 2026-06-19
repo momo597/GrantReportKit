@@ -9,6 +9,7 @@ export default function Pricing() {
     "30 / 14 / 3-day reminder schedule",
     "Board-friendly summary",
     "Optional Google Calendar import file",
+    "Stakeholder follow-up plan",
   ];
 
   return (

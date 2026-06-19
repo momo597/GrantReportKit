@@ -32,6 +32,10 @@ export default function WhatYouGet() {
       title: "Optional Google Calendar import",
       description: "An .ics file you can drop into Google Calendar or Outlook for deadline alerts.",
     },
+    {
+      title: "Stakeholder follow-up plan",
+      description: "A lightweight communication plan showing who needs to provide what, their preferred follow-up channel, when to start asking, and what is still missing before the report is due.",
+    },
   ];
 
   return (
@@ -42,7 +46,7 @@ export default function WhatYouGet() {
             Your report-readiness kit includes
           </h2>
           <p className="mt-4 text-base text-muted max-w-lg mx-auto">
-            One $49 setup. Eight deliverables. A practical setup to help your team stay ready.
+            One $49 setup. A practical report-readiness kit to help your team stay ready.
           </p>
         </div>
 

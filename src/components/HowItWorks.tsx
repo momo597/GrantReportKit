@@ -13,7 +13,7 @@ export default function HowItWorks() {
     {
       step: "02",
       title: "We send payment and sharing instructions",
-      description: "If it\u2019s a good fit, we\u2019ll send a payment link and a secure way to share up to 5 award letters or grant agreements.",
+      description: "If it\u2019s a good fit, we\u2019ll send a payment link and instructions for sharing up to 5 award letters or grant agreements.",
       icon: (
         <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
@@ -33,7 +33,7 @@ export default function HowItWorks() {
     {
       step: "04",
       title: "You receive a report-readiness kit",
-      description: "A clean plan your team can use: deadlines, deliverables, required financial and impact data items to collect, owner suggestions, and reminder dates.",
+      description: "A clean plan your team can use: deadlines, deliverables, required financial and impact data items to collect, owner suggestions, stakeholder follow-up plan, and reminder dates.",
       icon: (
         <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
